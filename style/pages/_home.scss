@@ -1,0 +1,99 @@
+.page-home{
+
+    .hero{
+        width: 100%;
+        height:fit-content;
+        padding: 50px;
+        background-color: #181718;
+    }
+    h1{
+        color: #E1DAD2;
+        font-size: 42px;
+        font-weight: 300;
+        margin-top: 40px;
+    }
+    .contact-text{
+      color: #EAD838;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .btn-shadow{
+        color: #3252DF;
+        background-color: #EBD19E;
+        border: 3px solid #EA8338;
+        padding: auto;
+        box-shadow: 6px 6px #3252DF;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .btn-normal{
+        color: #181718;
+        background-color: #FFFFFF;
+        border: 3px solid #EAD838;
+        padding: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    } 
+    .show-projects{
+        h1{
+            color: #181818;
+        }
+        p{
+            color: #181818;
+        }
+        .row-projects{
+            margin-bottom: 30px;
+        }
+        .projects-thumbnail{
+            width: 100%;
+            height: 283px;
+            background-color: #FFFFFF;
+            padding: 25px;
+            margin:10px;
+            border:7px solid #181718;
+            border-radius: 15px;
+        
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        
+            h2{
+                color: #3252DF;    
+            }
+        
+            button{
+                color: #181718;
+                background-color: #cfd5f1;
+                border: 4px solid #181718;
+                padding: auto;
+                border-radius: 15px;       
+            }
+
+            .btn-shadow{
+                color: #181718;
+                background-color: #cfd5f1;
+                border: 4px solid #181718;
+                border-radius: 15px;
+                padding: auto;
+                box-shadow: 6px 6px #000000;
+            }  
+        }
+    }
+    .show-articles{
+        .padding{
+            padding-left: 100px;
+        }
+        h2,h4{
+            color: #E1DAD2;
+        }
+        p{
+            color: #E1DAD2;
+            strong{
+                color: #EA8338;
+            }
+        }
+        .articles-text{
+            color: #E1DAD2;
+        }
+    }
+}
