@@ -14,9 +14,9 @@
         <div class="hero col-12 col-lg-6 col-md-3">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-12 text-center  ">
-                        <button class="btn btn-normal px-2 btn-lg">Bahasa Indonesia</button>
-                        <button class="btn btn-shadow px-2 btn-lg">English</button>
+                    <div class="col-lg-12 text-center" id="btn-group">
+                        <button class="btn btn-normal px-2 btn-lg"  id="btn-group1">Bahasa Indonesia</button>
+                        <button class="btn btn-normal px-2 btn-lg" id="btn-group2">English</button>
                     </div>
                     <div class="col-12 col-lg-5 col-md-5 text-left ">
                         <h1>
@@ -66,7 +66,7 @@
                             <h2>Sistem Informasi Pembayaran SPP</h2>
                             <h3>Sistem Informasi</h3>
                             <p>2019</p>
-                            <button class="btn px-2 btn-lg">View Project</button>
+                            <button id="btn-group1" class="btn px-2 btn-normal btn-lg">View Project</button>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -75,7 +75,7 @@
                             <h3>UI UX</h3>
                             <p>2021</p>
                             <a  target="_balnk" href="https://medium.com/@denii_arr/ui-ux-case-study-website-latihid-redesign-766586ba6fc8">
-                                <button class="btn px-2 btn-lg">View Project</button>
+                                <button id="btn-group2" class="btn px-2 btn-normal btn-lg">View Project</button>
                             </a>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                             <h2>Redesign Website Petakehidupanid</h2>
                             <h3>Web Development</h3>
                             <p>2021</p>
-                            <button class="btn px-2 btn-lg">View Project</button>
+                            <button id="btn-group3" class="btn px-2 btn-normal btn-lg">View Project</button>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6">
@@ -93,7 +93,7 @@
                             <h3>Sistem Informasi</h3>
                             <p>2020</p>
                             <a  target="_balnk" href="https://kuesioner.tiunsa.org">
-                                <button class="btn px-2 btn-lg">View Project</button>
+                                <button id="btn-group4" class="btn px-2 btn-normal btn-lg">View Project</button>
                             </a>
                         </div>
                     </div>
@@ -164,11 +164,59 @@
 </body>
 
 
+<script src="/vendor/jquery/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
+<script>
+    $(document).ready(function () {
+        $(".hero button").hover(
+           function () {
+               $(this).addClass("btn-shadow");
+               $(this).removeClass("btn-normal");
+           },
+           function () {
+               $(this).removeClass("btn-shadow");
+               $(this).addClass("btn-normal");
+           },
+       );
+        $('.hero button').click(
+            function(){
+                $('#btn-group1').removeClass('btn-active');
+                $('#btn-group2').removeClass('btn-active');
+                $(this).addClass('btn-active');
+                $(this).addClass('btn-active');
+               
+            }
+        );
+    });
+  </script>
+
+<script>
+    $(document).ready(function () {
+        $(".projects-thumbnail button").hover(
+           function () {
+               $(this).addClass("btn-shadow");
+               $(this).removeClass("btn-normal");
+           },
+           function () {
+               $(this).removeClass("btn-shadow");
+               $(this).addClass("btn-normal");
+           },
+       );
+       $('.row-projects button').click(
+            function(){
+                $('#btn-group1').removeClass('btn-active');
+                $('#btn-group2').removeClass('btn-active');
+                $(this).addClass('btn-active');
+                $(this).addClass('btn-active');
+            }
+        );
+    });
+</script>
+
 </html>
 
